@@ -30,7 +30,46 @@ TBD
 ## Availability
 Simply put if you are building a cloud service, it's to serve certain ***customers***, certain ***something**. Availability refers to uptime of this ***something***. It's generally quantified in percentage of time you are able to provide this ***something*** to each customer. 90% availability means you were up for 9 out of 10 hours. 
 
+** More Technical **
+***Availability*** refers to the ability of the user community to obtain a service or good, access the system, whether to submit new work, update or alter existing work, or collect the results of previous work. If a user cannot access the system, it is - from the users’ point of view - ***unavailable***. Generally, the term ***downtime*** is used to refer to periods when a system is unavailable. 
+
+#### Key Principles
+Following three are important principles of reliability engineering which can help achieve high availability:
+1. Elimination of single point of failure
+2. Reliable Crossover
+3. Detection of failure as they occur
+
 ### High Availability
+High-availability is, ultimately, the holy grail of the cloud. It's generally quantified as number of **NINES**. For example: [99.9% availability](#99.9%-Availability---3-Nines) is generally called 3 9's of availability.
+
+Here's how these transalates to uptime:
+
+#### 99.9% Availability - 3 Nines
+| Downtime Per year   | 8h 45min 57s  |
+|---------------------|---------------|
+| Downtime Per month  | 43m 49.7s     |
+| Downtime Per week   | 10m 4.8s      |
+| Downtime Per day    | 1m 26.4s      |
+
+#### 99.99% Availability - 4 Nines
+| Downtime Per year   | 52min 35.7s   |
+|---------------------|---------------|
+| Downtime Per month  | 4m 23s     |
+| Downtime Per week   | 1m 5s      |
+| Downtime Per day    | 8.6s      |
+
+#### Types of failures
+Some of the types of interruptions applications must handle is listed below: 
+
+ - Hardware failures 
+ - Deployment failures 
+ - Increased load 
+- Unexpected input errors 
+- Credentials/Certificates expiration 
+- Dependency Failures 
+- Infrastructure failures like Power 
+
+#### Availability vs Reliability - TBD
 #### How to achieve high availability in cloud? - TDB
 #### What availability is good availability? - TBD
 #### Tradeoff between availability and cost - TBD
